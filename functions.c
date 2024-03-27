@@ -61,7 +61,7 @@ int print_int (int s)
 
 /**
  * print_str - prints string
- * @*s: it is a pointer 
+ * @s: it is a pointer
  *
  * Return: returns count
  */
@@ -86,3 +86,25 @@ int print_str(char *s)
 	}
 	return (1);
 }
+
+
+
+/**
+ * print_char - prints a character
+ *
+ * @c: it is a char variable
+ *
+ * Return: returns 0.
+ */
+
+int print_char(char c)
+{
+	if (c == 0)
+	{
+		_putchar(0);
+		return (0);
+	}
+	_putchar(c);
+}
+
+
