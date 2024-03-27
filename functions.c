@@ -3,7 +3,6 @@
 
 /**
  * _putchar - prints character
- *
  * @c: it is a char variable
  *
  * Return: return 0.
