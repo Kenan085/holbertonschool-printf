@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 #include <unistd.h>
 
 /**
@@ -15,12 +15,13 @@ int _putchar (char c)
 
 /**
  * print_int - prints integer
+ * @k: count
  * @s: our integer variable
  *
  * Return: count
  */
 
-int print_int (int s)
+int print_int (int k, int s)
 {
 	int n;
 	int rem, i = 0;
@@ -30,6 +31,7 @@ int print_int (int s)
 	{
 		_putchar ('-');
 		n = -1 * s;
+		k++;
 	}
 	else
 	{
@@ -38,6 +40,7 @@ int print_int (int s)
 	if (n == 0)
 	{
 		_putchar (48);
+		k++;
 		return (0);
 	}
 	while (n > 0)
@@ -54,20 +57,22 @@ int print_int (int s)
 	while (i >= 0)
 	{
 		_putchar (number[i]);
+		k++;
 		i--;
 	}
-	return (1);
+	return (k);
 }
 
 /**
  * print_str - prints string
+ * @k: count
  * @s: it is a pointer
  *
  * Return: returns count
  */
 
 
-int print_str(char *s)
+int print_str(int k, char *s)
 {
 	int i = 0;
 
@@ -77,6 +82,7 @@ int print_str(char *s)
 		{
 			_putchar (s[i]);
 			i++;
+			k++;
 		}
 	}
 	else if (s == NULL)
@@ -84,27 +90,30 @@ int print_str(char *s)
 		_putchar (0);
 		return (0);
 	}
-	return (1);
+	return (k);
 }
 
 
 
 /**
  * print_char - prints a character
- *
+ * @k: count
  * @c: it is a char variable
  *
  * Return: returns 0.
  */
 
-int print_char(char c)
+int print_char(int k, char c)
 {
 	if (c == 0)
 	{
 		_putchar(0);
-		return (0);
+		k = k + 6;
+		return (k);
 	}
 	_putchar(c);
+	k++;
+	return (k);
 }
 
 
