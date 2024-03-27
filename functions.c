@@ -14,7 +14,7 @@ int _putchar (char c)
 }
 
 /**
- * print_int
+ * print_int - prints integer
  * @s: our integer variable
  *
  * Return: count
@@ -55,6 +55,34 @@ int print_int (int s)
 	{
 		_putchar (number[i]);
 		i--;
+	}
+	return (1);
+}
+
+/**
+ * print_str - prints string
+ * @*s: it is a pointer 
+ *
+ * Return: returns count
+ */
+
+
+int print_str(char *s)
+{
+	int i = 0;
+
+	if (s)
+	{
+		while (s[i] != 0)
+		{
+			_putchar (s[i]);
+			i++;
+		}
+	}
+	else if (s == NULL)
+	{
+		_putchar (0);
+		return (0);
 	}
 	return (1);
 }
