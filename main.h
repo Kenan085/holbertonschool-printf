@@ -6,6 +6,7 @@
 #include <stdarg.h>
 #include <string.h>
 
+int _printf(const char *format, ...);
 int _putchar (char c);
 int print_int (int k, int s);
 int print_str (int k, char *s);

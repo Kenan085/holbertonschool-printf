@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 			_putchar (*(format + i));
 			n++;
 		}
-		else if (*(format + i) == '%' && *(format + i + 1) == NULL)
+		else if (*(format + i) == '%' && *(format + i + 1) == '\0')
 		{
 			continue;
 		}
@@ -43,8 +43,8 @@ int _printf(const char *format, ...)
 			n = print_str(n, va_arg(args, char *));
 			i++;
 		}
-		else if (*(format + i) == '%' && (*(format + i + 1) == 'd')
-					|| (*(format + i + 1) == 'i'))
+		else if (*(format + i) == '%' && *(format + i + 1) == 'd'
+					|| *(format + i + 1) == 'i')
 		{
 			n = print_int(n, va_arg(args, int));
 			i++;
