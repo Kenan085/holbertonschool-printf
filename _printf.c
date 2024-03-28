@@ -43,7 +43,7 @@ int _printf(const char *format, ...)
 			n = print_str(n, va_arg(args, char *));
 			i++;
 		}
-		else if (*(format + i) == '%' && *((format + i + 1) == 'd')
+		else if (*(format + i) == '%' && (*(format + i + 1) == 'd')
 					|| (*(format + i + 1) == 'i'))
 		{
 			n = print_int(n, va_arg(args, int));
