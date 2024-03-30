@@ -112,7 +112,12 @@ int print_char(int k, char c)
 {
 	if (c == 0)
 	{
-		_putchar(0);
+		_putchar ('(');
+		_putchar ('n');
+		_putchar ('u');
+		_putchar ('l');
+		_putchar ('l');
+		_putchar (')');
 		k = k + 6;
 		return (k);
 	}
