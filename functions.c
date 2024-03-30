@@ -25,7 +25,7 @@ int print_int (int k, int s)
 {
 	int n;
 	int rem, i = 0;
-	char number[25];
+	char number[11];
 
 	if (s < 0)
 	{
@@ -110,7 +110,7 @@ int print_str(int k, char *s)
 
 int print_char(int k, char c)
 {
-	if (c == 0)
+	if (c == 0 && c != '\0')
 	{
 		_putchar ('(');
 		_putchar ('n');
