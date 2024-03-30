@@ -41,7 +41,7 @@ int print_int (int k, int s)
 	{
 		_putchar (48);
 		k++;
-		return (0);
+		return (k);
 	}
 	while (n > 0)
 	{
@@ -87,8 +87,13 @@ int print_str(int k, char *s)
 	}
 	else if (s == NULL)
 	{
-		_putchar (0);
-		return (0);
+		_putchar ('(');
+		_putchar ('n');
+		_putchar ('u');
+		_putchar ('l');
+		_putchar ('l');
+		_putchar (')');
+		r = r + 6;
 	}
 	return (k);
 }
