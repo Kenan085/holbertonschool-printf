@@ -23,7 +23,7 @@ int _putchar (char c)
 
 int print_int (int k, int s)
 {
-	int n;
+	unsigned int n;
 	int rem, i = 0;
 	char number[11];
 
