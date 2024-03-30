@@ -93,7 +93,7 @@ int print_str(int k, char *s)
 		_putchar ('l');
 		_putchar ('l');
 		_putchar (')');
-		r = r + 6;
+		k = k + 6;
 	}
 	return (k);
 }
